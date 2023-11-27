@@ -1,7 +1,7 @@
 import { API_ENDPOINTS } from 'utils/api-integration';
 import CoreAPIService from './CoreAPIService';
 
-const URl = 'http://worldtimeapi.org/api';
+const URl = 'https://worldtimeapi.org/api';
 class CountriesService {
   getCountries = () => {
     return CoreAPIService.get<string[]>(`${URl}${API_ENDPOINTS.PUBLIC.GET_COUNTRIES}`);
