@@ -9,7 +9,7 @@ import { generateEmptyArray } from 'utils/helper';
 
 const HomePageTemplate: FC<HomePageTemplateProps> = ({ usersData, isLoading }) => {
   return (
-    <Card className='border m-2' variant='none'>
+    <Card className='border m-2 text-neutral-100' variant='none'>
       <Typography size='subtitle' className='p-4'>
         Directory
       </Typography>

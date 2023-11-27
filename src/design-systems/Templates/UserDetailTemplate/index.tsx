@@ -26,7 +26,7 @@ const UserDetailTemplate: FC<UserDetailTemplateProps> = ({ id, countries, isLoad
     if (postList) return postList?.filter((data: PostDetailsList) => Number(id) === data?.userId);
   }, [id, postList]);
   return (
-    <Card className='border m-2' variant='none' isLink={false}>
+    <Card className='border m-2 text-neutral-100' variant='none' isLink={false}>
       <UserDetailsHeader countries={countries} isLoadingCountries={isLoadingCountries} />
       <Typography size='subtitle' className='md:mt-0 mt-6'>
         Profile Page
@@ -48,8 +48,8 @@ const UserDetailTemplate: FC<UserDetailTemplateProps> = ({ id, countries, isLoad
             ))
           ) : userData ? (
             <>
-              <div className='flex flex-col'>
-                <Typography className='flex'>{userData?.name}</Typography>
+              <div className='flex flex-col '>
+                <Typography className='flex '>{userData?.name}</Typography>
                 <div className='flex flex-row gap-2'>
                   <Typography className='flex'>{userData?.username}</Typography> |
                   <Typography className='flex'>{userData?.company?.catchPhrase}</Typography>
