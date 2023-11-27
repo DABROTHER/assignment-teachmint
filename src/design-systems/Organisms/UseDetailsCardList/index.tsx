@@ -44,7 +44,7 @@ const UseDetailsCardList: FC<UseDetailsCardListProps> = ({ data, isLoadingCountr
                   <Typography className='!font-medium h-[85px] ' size='paragraph'>
                     {title}
                   </Typography>
-                  <Typography className=' flex-grow' size='body'>
+                  <Typography className=' flex-grow overflow-hidden' size='body'>
                     {body}
                   </Typography>
                 </div>
