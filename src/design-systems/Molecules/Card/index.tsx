@@ -20,7 +20,7 @@ const Card: FC<CardProps> = ({
     <div
       className={`${
         direction != 'z-direction' && cardDirection
-      } relative rounded-xs  ${className}  flex flex-col ${borderRadius}  opacity-100`}
+      } relative rounded-xs border-neutral-100  ${className}  flex flex-col ${borderRadius}  opacity-100`}
     >
       {isLink ? (
         <Link href={href} scroll={scroll} className={linkCss}>
